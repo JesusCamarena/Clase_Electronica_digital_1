@@ -1,0 +1,62 @@
+# Compiled source
+###################
+*.d
+*.o
+*.mk
+*.eep
+*.elf
+*.hex
+*.lss
+*.map
+*.srec
+*.atsln
+*.xml
+*.cproj
+
+# Ignorar carpeta de backups
+Project Backups/
+
+# Ignorar archivos .workspace
+*.workspace
+
+# Ignorar extensiones específicas
+*.wav
+*.zxq
+*.haz
+*.his
+*.bl2
+*.bl3
+*.jid
+*.lci
+*.fit
+*.sty
+*.lct
+*.svl
+*.syn
+*.rev
+*.rpt
+*.tcl
+*.tt2
+*.tt3
+*.xrf
+*.ini
+*.abt
+*.abv
+*.bl0
+*.bl1
+*.bls
+*.sts
+*.jhd
+*.naf
+*.smj
+*.sym
+*.tmv
+*.env
+
+
+
+
+
+
+
+

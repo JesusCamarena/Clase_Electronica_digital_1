@@ -1,0 +1,82 @@
+;Simulate ispLEVER Classic 2.0.00.17.20.15  Date: Sat Feb 22 17:47:30 2020
+[Times]
+Units=0
+Decimals=0
+
+[StateTables]
+TableCount=1
+Table0=ABEL
+
+[ABEL]
+StateCount=8 
+Level0=0
+ Color0=4
+ Code0=0
+ Name0=Low, input
+Level1=1
+ Color1=4
+ Code1=1
+ Name1=High, input
+Level2=2
+ Color2=1
+ Code2=X
+ Name2=Don't Care
+Level3=2
+ Color3=2
+ Code3=Z
+ Name3=Hi-Z
+Level4=0
+ Color4=4
+ Code4=L
+ Name4=Low, output
+Level5=1
+ Color5=4
+ Code5=H
+ Name5=High,output
+Level6=3
+ Color6=4
+ Code6=C
+ Name6=Clock
+Level7=3
+ Color7=4
+ Code7=K
+ Name7=Klunk
+
+[NameRules]
+Language=
+LeadingInstancePrefix=No
+RootNets=NoPrefix
+InstanceSeparator=.
+NetSeparator=.
+BusParentheses=[:]
+
+[Names]
+Namecount=36
+1=L 0 A
+2=L 0 B
+3=L 0 C
+14=L 0 OR
+15=L 0 NAND
+21=L 0 AND
+22=L 0 NOR
+23=L 0 EXOR
+
+[Data]
+0=Time 0
+1=L 1 0  2 0  3 0  4 0  5 0  6 0  7 0  8 0  9 0  10 0  11 0  12 0  13 0  14 4  15 5  16 3  17 3  18 3  19 3  20 3  21 4  
+2=L 22 5  23 4  24 0  25 4  26 4  27 0  28 0  29 1  30 1  31 1  32 1  33 1  34 0  35 0  36 0  
+3=Time 100
+4=L 1 1  14 5  22 4  23 5  
+5=Time 200
+6=L 1 0  2 1  
+7=Time 300
+8=L 1 1  23 4  
+9=Time 400
+10=L 1 0  2 0  3 1  23 5  
+11=Time 500
+12=L 1 1  23 4  
+13=Time 600
+14=L 1 0  2 1  
+15=Time 700
+16=L 1 1  15 4  21 5  23 5  
+17=Time 801
