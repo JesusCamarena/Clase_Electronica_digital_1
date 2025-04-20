@@ -53,6 +53,7 @@ Project Backups/
 *.tmv
 *.env
 *.sch
+*.log
 
 
 
