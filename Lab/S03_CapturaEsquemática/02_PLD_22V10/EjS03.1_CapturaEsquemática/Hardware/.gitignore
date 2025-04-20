@@ -1,0 +1,26 @@
+# Compiled source #
+###################
+*.d
+*.o
+*.mk
+*.eep
+*.elf
+*.hex
+*.lss
+*.map
+*.srec
+*.atsln
+*.xml
+*.cproj
+# Ignorar carpeta de backups
+Project Backups/
+
+# Ignorar archivos .workspace
+*.workspace
+
+
+
+
+
+
+
