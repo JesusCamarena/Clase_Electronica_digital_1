@@ -1,0 +1,28 @@
+Name     Lab_ED1 ;
+PartNo   00 ;
+Date     29/09/2020 ;
+Revision 01 ;
+Designer Engineer ;
+Company  FIME - UANL ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/**Entradas**/
+PIN 1 = A;
+PIN 2 = B;
+PIN 3 = C;
+
+/**Salidas**/
+PIN 23 = AND;
+PIN 22 = OR;
+PIN 21 = NAND;
+PIN 20 = NOR;
+PIN 19 = EXOR;
+
+/**Ecuaciones**/
+AND  = A & B & C;   /* And gate logic */
+OR   = A # B # C;    /* Or gate logic */
+NAND = !(A & B & C);/* Nand gate logic*/
+NOR  = !(A # B # C); /* Nor gate logic */
+EXOR = A $ B $ C;  /* Exor gate logic */

@@ -54,7 +54,6 @@ Project Backups/
 *.env
 *.sch
 *.log
-*.err
 
 
 
