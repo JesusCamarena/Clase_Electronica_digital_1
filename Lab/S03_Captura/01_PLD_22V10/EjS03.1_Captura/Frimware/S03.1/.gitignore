@@ -52,6 +52,7 @@ Project Backups/
 *.sym
 *.tmv
 *.env
+*.sch
 
 
 
