@@ -1,0 +1,49 @@
+
+"No copies y pegues sin pensar: analiza, inspírate y haz el tuyo. Así es como realmente aprendes."
+
+" *************************************************************************
+" *   Copyright (C) 2025 by Jesús D. Garza Camarena                       *
+" *   jesus.garzacmn@uanl.edu.mx                                          *
+" *   Attribution-NonCommercial-ShareAlike 3.0 (CC-BY-NC-SA 3.0)          *
+" *   https://creativecommons.org/licenses/by-nc-sa/3.0/                  *
+" *                                                                       * 
+" *   Example S04   - Lab Practice #04                                    *
+" *   Device: GAL22V10 / ATF22v10                                         *
+" *   Language: ABEL - HDL                                                *
+" *   Revision: 1.0                                                       *
+" *                                                                       *
+" *   Date: 20/04/25                                                      *
+" ************************************************************************/
+
+//Coloca tus datos de esta manera pata presentar tu código
+"Nombre de la actividad:
+"Brigada : Dia y hora
+"Nombres:
+"N.L. : número de lista
+"Fecha:  
+
+MODULE S04                              // Nombre del módulo: Compuertas
+
+TITLE 'Ecuaciones booleanas SOP y POS'  // Título descriptivo para el módulo
+
+DECLARATIONS                            // Sección de declaraciones de entradas y salidas
+
+"Inputs"                        
+a, b, c, d PIN 1,2,3,4;        
+
+"Outputs"                    
+f1,f2 PIN 23,21 ISTYPE 'COM';                // ISTYPE 'COM' indica que son salidas tipo combinacional
+
+EQUATIONS                               // Sección donde se definen las ecuaciones lógicas
+
+"f1(a,b,c,d) = a’b c’d + b’c d + a d’ -> SOP"
+f1 = (!a & b & !c & d) # (!b & c & d) # (a & !d);
+
+"f2(a,b,c,d) = (a + b + c’+ d)(a’+ c + d)(b’ + d’) -> POS"
+f2 = (a # b # !c # d) & (!a # c # d) & (!b # !d);
+
+
+END                                     // Fin del módulo
+
+
+
