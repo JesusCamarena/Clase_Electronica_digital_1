@@ -66,5 +66,5 @@ BEGIN
     nor_out  <= NOT (a OR b OR c);         -- Nor: Negación de la operación OR
     exor_out <= a XOR b XOR c;             -- Xor: Verdadero si hay un número impar de '1'
 
-END ARCHITECTURE Behavioral;
+END ARCHITECTURE behavioral;
 
